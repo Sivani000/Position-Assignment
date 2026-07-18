@@ -1,0 +1,308 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.main-content{
+    margin-top:80px;
+}
+
+.task{
+    margin:40px;
+    padding:20px;
+    border:2px solid black;
+    background:white;
+}
+
+.task h2{
+    margin-bottom:20px;
+}
+
+/* Task 1 */
+
+.static-box{
+    position:static;
+    width:200px;
+    padding:20px;
+    background:skyblue;
+    border:2px solid black;
+    margin-bottom:20px;
+}
+
+/* Task 2 */
+
+.relative-box{
+    position:relative;
+    top:20px;
+    left:40px;
+    width:200px;
+    padding:20px;
+    background:orange;
+    border:2px solid black;
+}
+
+/* Task 3 */
+
+.parent{
+    position:relative;
+    width:500px;
+    height:250px;
+    border:3px solid black;
+    background:#ddd;
+}
+
+.absolute-box{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    width:150px;
+    padding:15px;
+    background:red;
+    color:white;
+    text-align:center;
+}
+
+/* Task 4 */
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown button{
+    padding:12px 20px;
+    cursor:pointer;
+}
+
+.dropdown-content{
+    position:absolute;
+    display:none;
+    top:100%;
+    left:0;
+    min-width:180px;
+    background:white;
+    border:1px solid black;
+}
+
+.dropdown-content a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:black;
+}
+
+.dropdown-content a:hover{
+    background:#ddd;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* Task 5 */
+
+.fixed-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+    z-index:1000;
+}
+
+/* Task 6 */
+
+.sticky-nav{
+    position:sticky;
+    top:70px;
+    background:green;
+    padding:15px;
+}
+
+.sticky-nav a{
+    color:white;
+    margin-right:25px;
+    text-decoration:none;
+}
+
+.scroll-box{
+    height:500px;
+    background:#eee;
+    margin-top:20px;
+    padding:20px;
+}
+
+/* Task 7 */
+
+.responsive-parent{
+    position:relative;
+    height:250px;
+    border:2px solid black;
+}
+
+.responsive-box{
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:150px;
+    padding:20px;
+    background:purple;
+    color:white;
+}
+
+@media(max-width:768px){
+
+    .responsive-box{
+
+        position:relative;
+        top:0;
+        left:0;
+        margin:20px auto;
+
+    }
+
+}
+
+/* Task 8 */
+
+.tooltip{
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.tooltip-text{
+    position:absolute;
+    bottom:130%;
+    left:50%;
+    transform:translateX(-50%);
+    background:black;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    visibility:hidden;
+    white-space:nowrap;
+}
+
+.tooltip:hover .tooltip-text{
+    visibility:visible;
+}
+
+/* Task 9 */
+
+.modal{
+    position:relative;
+    height:300px;
+    background:#ccc;
+}
+
+.modal-content{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:300px;
+
+    padding:30px;
+
+    background:white;
+
+    border:2px solid black;
+
+    text-align:center;
+}
+
+/* Task 10 */
+
+.layout{
+
+    position:relative;
+
+    height:500px;
+
+    border:3px solid black;
+
+    background:white;
+
+}
+
+.layout-header{
+
+    position:sticky;
+
+    top:0;
+
+    background:navy;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.layout-sidebar{
+
+    position:absolute;
+
+    left:0;
+
+    top:70px;
+
+    width:180px;
+
+    bottom:0;
+
+    background:#444;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.layout-content{
+
+    position:relative;
+
+    margin-left:200px;
+
+    padding:30px;
+
+    height:350px;
+
+    background:#f0f0f0;
+
+}
+
+.layout-box{
+
+    position:absolute;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:150px;
+
+    padding:20px;
+
+    background:red;
+
+    color:white;
+
+    text-align:center;
+
+}
